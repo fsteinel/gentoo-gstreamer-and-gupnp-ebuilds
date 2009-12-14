@@ -1,0 +1,44 @@
+# ChangeLog for media-tv/rygel
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*gnome-dv-daemon-0.1.12 (14 Oct 2009)
+
+  14 Oct 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.12.ebuild:
+  Version bump.
+
+*gnome-dv-daemon-0.1.11 (6 Oct 2009)
+
+  6 Oct 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.11.ebuild:
+  Version bump.
+
+*gnome-dv-daemon-0.1.10 (4 Oct 2009)
+
+  4 Oct 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.10.ebuild:
+  Version bump.
+
+*gnome-dv-daemon-0.1.9 (4 Oct 2009)
+
+  4 Oct 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.9.ebuild:
+  Version bump.
+
+*gnome-dv-daemon-0.1.8.1 (9 Aug 2009)
+
+  9 Aug 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.8.1.ebuild:
+  Version bump.
+
+*gnome-dv-daemon-0.1.7 (17 Mai 2009)
+
+  17 Mai 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.7.ebuild:
+  Version bump.
+
+*gnome-dv-daemon-0.1.6 (16 Mai 2009)
+
+  16 Mai 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.6.ebuild:
+  Version bump.
+
+*gnome-dv-daemon-0.1.5 (22 Mrz 2009)
+
+  22 Mrz 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.5.ebuild:
+  Initial import.
+
