@@ -4,9 +4,6 @@
 	<herd>no-herd</herd>
 	<maintainer>
 		<email>Florian.Steinel@gmail.com</email>
-		<name>fsteinel</name>
+		<name>Florian Steinel</name>
 	</maintainer>
-	<longdescription>a daemon written in Vala based on GStreamer to setup your
-		DVB devices, record and watch TV shows and browse EPG. It can be
-		controlled by any application via its D-Bus interface.</longdescription>
 </pkgmetadata>
