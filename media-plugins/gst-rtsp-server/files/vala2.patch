@@ -1,0 +1,19 @@
+--- bindings/vala/Makefile.am.bak	2009-03-04 12:49:45.000000000 +0100
++++ bindings/vala/Makefile.am	2009-08-09 19:33:20.000000000 +0200
+@@ -1,12 +1,10 @@
+ 
+-VAPI_FILES = gst-rtsp-server-0.10.deps
+-DEPS_FILES = gst-rtsp-server-0.10.vapi
+-
+ gst-rtsp-server-0.10.deps:
+ 	cp packages/gst-rtsp-server-0.10.deps $@
+     
+-vapidir = $(VAPIDIR)
+-vapi_DATA = $(VAPI_FILES) $(DEPS_FILES)
++vapidir = $(datadir)/vala/vapi
++dist_vapi_DATA = gst-rtsp-server-0.10.vapi
++dist_deps_DATA = gst-rtsp-server-0.10.deps
+ 
+-EXTRA_DIST = packages $(DEPS_FILES)
++EXTRA_DIST = packages gst-rtsp-server-0.10.vapi
+ 
