@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>no-herd</herd>
+	<maintainer>
+		<email>Florian.Steinel@gmail.com</email>
+		<name>fsteinel</name>
+	</maintainer>
+	<longdescription>a daemon written in Vala based on GStreamer to setup your
+		DVB devices, record and watch TV shows and browse EPG. It can be
+		controlled by any application via its D-Bus interface.</longdescription>
+</pkgmetadata>

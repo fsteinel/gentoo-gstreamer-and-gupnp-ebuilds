@@ -1,0 +1,9 @@
+# ChangeLog for media-tv/rygel
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*gst-teletext-0.0.1_pre1 (04 Oct 2009)
+
+  04 Oct 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gst-teletext-0.0.1_pre1.ebuild:
+  Initial import.
+
