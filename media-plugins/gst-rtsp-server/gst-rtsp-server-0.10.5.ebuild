@@ -6,14 +6,15 @@ EAPI=2
 
 inherit eutils
 
-#http://cgit.freedesktop.org/gstreamer/gst-rtsp-server/
 DESCRIPTION="A GStreamer based RTSP server"
 HOMEPAGE="http://people.freedesktop.org/~wtay/"
 SRC_URI="http://people.freedesktop.org/~wtay/${P/-server/}.tar.bz2"
+#http://cgit.freedesktop.org/gstreamer/gst-rtsp-server/
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
+IUSE=""
 #IUSE="python vala"
 
 #FIXME autoenable python and vala bindings
