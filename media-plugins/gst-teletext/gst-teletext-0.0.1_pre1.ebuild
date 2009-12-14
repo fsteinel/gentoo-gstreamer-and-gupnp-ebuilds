@@ -13,6 +13,7 @@ SRC_URI="http://download.github.com/sebp-gst-teletext-5355813.zip"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64"
+IUSE=""
 
 DEPEND="media-libs/zvbi
 	>=media-libs/gstreamer-0.10.23
