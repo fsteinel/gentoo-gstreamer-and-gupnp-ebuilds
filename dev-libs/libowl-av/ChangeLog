@@ -1,0 +1,14 @@
+# ChangeLog for media-fonts/ttf-cambria
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*libowl-av-0.1-r1 (15 Feb 2009)
+
+  15 Feb 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +libowl-av-0.1-r1.ebuild:
+  Add gstreamer playbin2 support from upstream svn.
+
+*libowl-av-0.1 (11 Oct 2008)
+
+  11 Oct 2008; Florian Steinel <fsteinel@gentoo.de.flonet.net> +libowl-av-0.1.ebuild:
+  Initial import.
+

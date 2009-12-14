@@ -1,0 +1,17 @@
+--- trunk/libowl-av/libowl-av/owl-audio-player.c	2008/06/30 09:03:41	395
++++ trunk/libowl-av/libowl-av/owl-audio-player.c	2008/12/10 14:36:13	416
+@@ -273,7 +273,13 @@
+          * playbin.
+          **/
+         audio_player->priv->playbin =
+-                gst_element_factory_make ("playbin", "playbin");
++                gst_element_factory_make ("playbin2", "playbin2");
++        if (!audio_player->priv->playbin) {
++                /* Try playbin if playbin2 isn't available */
++                audio_player->priv->playbin =
++                        gst_element_factory_make ("playbin", "playbin");
++        }
++
+         if (!audio_player->priv->playbin) {
+                 g_warning ("No playbin found. Playback will not work.");
+ 

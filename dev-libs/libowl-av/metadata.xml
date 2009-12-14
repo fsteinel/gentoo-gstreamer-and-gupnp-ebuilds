@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>no-herd</herd>
+	<maintainer>
+		<email>Florian.Steinel@gmail.com</email>
+		<name>fsteinel</name>
+	</maintainer>
+	<longdescription>libowl-av (OpenedHand Widget Library - Audio/Video) is a
+ collection of objects for use in multimedia applications. These include
+ a video widget, as well as audio player and metadata reader objects. All of
+ these are backed by GStreamer and include Vala bindings.</longdescription>
+</pkgmetadata>
