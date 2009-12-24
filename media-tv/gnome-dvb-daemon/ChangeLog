@@ -7,6 +7,11 @@
   24 Dec 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.14.ebuild:
   Version bump.
 
+*gnome-dv-daemon-0.1.13 (19 Nov 2009)
+
+  19 Nov 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.13.ebuild:
+  Version bump.
+
 *gnome-dv-daemon-0.1.12 (14 Oct 2009)
 
   14 Oct 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.12.ebuild:
