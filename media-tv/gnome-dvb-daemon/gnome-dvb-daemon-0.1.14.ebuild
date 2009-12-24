@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=2
+EAPI="2"
+SUPPORT_PYTHON_ABIS="1"
 
-inherit gnome2
+inherit multilib gnome2 python
 
 DESCRIPTION="record and watch TV shows and browse EPG"
 HOMEPAGE="http://live.gnome.org/DVBDaemon"
@@ -32,6 +33,8 @@ DEPEND="${RDEPEND}
 	dev-util/pkgconfig
 	sys-devel/gettext"
 
+RESTRICT_PYTHON_ABIS="3*"
+
 pkg_setup() {
 	G2CONF="${G2CONF}
 		--disable-dependency-tracking
@@ -40,13 +43,26 @@ pkg_setup() {
 	DOCS="AUTHORS ChangeLog NEWS README"
 }
 
+src_prepare() {
+	# Disable pyc compiling
+	mv "${S}"/py-compile "${S}"/py-compile.orig
+	ln -s $(type -P true) "${S}"/py-compile
+	gnome2_src_prepare
+}
+
 src_configure() {
 	export GST_INSPECT=/bin/true
 	export GST_REGISTRY="${T}/.gstreamer"
 	gnome2_src_configure
 }
-#
-#src_install() {
-#	emake DESTDIR="${D}" install || die "emake install failed."
-#	dodoc AUTHORS ChangeLog NEWS README
-#}
+
+pkg_postinst() {
+	gnome2_pkg_postinst
+	python_need_rebuild
+	python_mod_optimize /usr/$(get_libdir)/totem/plugins/dvb-daemon
+	python_mod_optimize gnomedvb
+}
+pkg_postrm() {
+	python_mod_cleanup /usr/$(get_libdir)/totem/plugins/dvb-daemon
+	python_mod_cleanup gnomedvb
+}
