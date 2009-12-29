@@ -4,8 +4,9 @@
 
 EAPI="2"
 SUPPORT_PYTHON_ABIS="1"
+PYTHON_DEFINE_DEFAULT_FUNCTIONS="1"
 
-inherit multilib gnome2 python
+inherit gnome2 python
 
 DESCRIPTION="record and watch TV shows and browse EPG"
 HOMEPAGE="http://live.gnome.org/DVBDaemon"
@@ -33,7 +34,7 @@ DEPEND="${RDEPEND}
 	dev-util/pkgconfig
 	sys-devel/gettext"
 
-RESTRICT_PYTHON_ABIS="3*"
+RESTRICT_PYTHON_ABIS="3.*"
 
 pkg_setup() {
 	G2CONF="${G2CONF}
@@ -48,21 +49,26 @@ src_prepare() {
 	mv "${S}"/py-compile "${S}"/py-compile.orig
 	ln -s $(type -P true) "${S}"/py-compile
 	gnome2_src_prepare
+	python_copy_sources
 }
 
 src_configure() {
 	export GST_INSPECT=/bin/true
 	export GST_REGISTRY="${T}/.gstreamer"
-	gnome2_src_configure
+	python_execute_function -s gnome2_src_configure
+}
+
+src_install() {
+	python_execute_function -s gnome2_src_install
 }
 
 pkg_postinst() {
 	gnome2_pkg_postinst
 	python_need_rebuild
-	python_mod_optimize /usr/$(get_libdir)/totem/plugins/dvb-daemon
-	python_mod_optimize gnomedvb
+	python_mod_optimize gnomedvb /usr/$(get_libdir)/totem/plugins/dvb-daemon
 }
+
 pkg_postrm() {
-	python_mod_cleanup /usr/$(get_libdir)/totem/plugins/dvb-daemon
-	python_mod_cleanup gnomedvb
+	gnome2_pkg_postrm
+	python_mod_cleanup gnomedvb /usr/$(get_libdir)/totem/plugins/dvb-daemon
 }
