@@ -4,6 +4,8 @@
 
 EAPI=2
 
+inherit eutils
+
 DESCRIPTION="an object-oriented framework for creating UPnP devs and control points."
 HOMEPAGE="http://gupnp.org"
 SRC_URI="http://${PN}.org/sources/${PN}/${P}.tar.gz"
@@ -23,6 +25,10 @@ DEPEND="${RDEPEND}
 	dev-util/pkgconfig
 	sys-devel/gettext"
 
+src_prepare() {
+	epatch "${FILESDIR}"/0001-Fix-failures-for-DLNA-CTT-test-cases-7.2.5.9-and-7.2.patch
+}
+
 src_configure() {
 	local backend=unix
 	use networkmanager && backend=network-manager
@@ -30,8 +36,6 @@ src_configure() {
 	econf \
 		--disable-dependency-tracking \
 		--disable-gtk-doc \
-		--disable-gtk-doc-html \
-		--disable-gtk-doc-pdf \
 		--with-context-manager=${backend}
 }
 
