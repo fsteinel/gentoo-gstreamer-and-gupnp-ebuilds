@@ -36,7 +36,7 @@ src_prepare() {
 	epatch "${FILESDIR}"/${PV}-wrapper.patch
 	epatch "${FILESDIR}"/${PV}-paths.patch
 
-	python_copy_sources
+	python_copy_sources --no-link
 
 	preparation() {
 		sed -i \
