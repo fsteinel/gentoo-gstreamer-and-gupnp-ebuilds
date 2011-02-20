@@ -3,6 +3,10 @@
 # $Header: $
 
   20 Feb 2011; Florian Steinel <fsteinel@gentoo.de.flonet.net>
+  gnome-dvb-daemon-0.1.23.ebuild:
+  fix vala dependency
+
+  20 Feb 2011; Florian Steinel <fsteinel@gentoo.de.flonet.net>
   gnome-dvb-daemon-0.1.15.ebuild, gnome-dvb-daemon-0.1.16.ebuild,
   gnome-dvb-daemon-0.1.17.ebuild, gnome-dvb-daemon-0.1.18.ebuild,
   gnome-dvb-daemon-0.1.19.ebuild, gnome-dvb-daemon-0.1.20.ebuild,

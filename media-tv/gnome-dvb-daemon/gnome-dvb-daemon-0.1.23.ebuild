@@ -32,6 +32,7 @@ RDEPEND="dev-libs/glib:2
 	x11-libs/gtk+:2
 	dev-python/gst-python
 	dev-python/pygobject
+	>=dev-lang/vala-0.11.5
 	totem? ( media-video/totem )
 	upnp? ( >=media-tv/rygel-0.7.0 )"
 DEPEND="${RDEPEND}
