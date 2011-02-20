@@ -1,54 +1,54 @@
-# ChangeLog for media-tv/rygel
+# ChangeLog for media-tv/gnome-dvb-daemon
 # Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
-*gnome-dv-daemon-0.1.14 (24 Dec 2009)
+*gnome-dvb-daemon-0.1.14 (24 Dec 2009)
 
-  24 Dec 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.14.ebuild:
+  24 Dec 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dvb-daemon-0.1.14.ebuild:
   Version bump.
 
-*gnome-dv-daemon-0.1.13 (19 Nov 2009)
+*gnome-dvb-daemon-0.1.13 (19 Nov 2009)
 
-  19 Nov 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.13.ebuild:
+  19 Nov 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dvb-daemon-0.1.13.ebuild:
   Version bump.
 
-*gnome-dv-daemon-0.1.12 (14 Oct 2009)
+*gnome-dvb-daemon-0.1.12 (14 Oct 2009)
 
-  14 Oct 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.12.ebuild:
+  14 Oct 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dvb-daemon-0.1.12.ebuild:
   Version bump.
 
-*gnome-dv-daemon-0.1.11 (6 Oct 2009)
+*gnome-dvb-daemon-0.1.11 (6 Oct 2009)
 
-  6 Oct 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.11.ebuild:
+  6 Oct 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dvb-daemon-0.1.11.ebuild:
   Version bump.
 
-*gnome-dv-daemon-0.1.10 (4 Oct 2009)
+*gnome-dvb-daemon-0.1.10 (4 Oct 2009)
 
-  4 Oct 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.10.ebuild:
+  4 Oct 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dvb-daemon-0.1.10.ebuild:
   Version bump.
 
-*gnome-dv-daemon-0.1.9 (4 Oct 2009)
+*gnome-dvb-daemon-0.1.9 (4 Oct 2009)
 
-  4 Oct 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.9.ebuild:
+  4 Oct 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dvb-daemon-0.1.9.ebuild:
   Version bump.
 
-*gnome-dv-daemon-0.1.8.1 (9 Aug 2009)
+*gnome-dvb-daemon-0.1.8.1 (9 Aug 2009)
 
-  9 Aug 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.8.1.ebuild:
+  9 Aug 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dvb-daemon-0.1.8.1.ebuild:
   Version bump.
 
-*gnome-dv-daemon-0.1.7 (17 Mai 2009)
+*gnome-dvb-daemon-0.1.7 (17 Mai 2009)
 
-  17 Mai 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.7.ebuild:
+  17 Mai 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dvb-daemon-0.1.7.ebuild:
   Version bump.
 
-*gnome-dv-daemon-0.1.6 (16 Mai 2009)
+*gnome-dvb-daemon-0.1.6 (16 Mai 2009)
 
-  16 Mai 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.6.ebuild:
+  16 Mai 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dvb-daemon-0.1.6.ebuild:
   Version bump.
 
-*gnome-dv-daemon-0.1.5 (22 Mrz 2009)
+*gnome-dvb-daemon-0.1.5 (22 Mrz 2009)
 
-  22 Mrz 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dv-daemon-0.1.5.ebuild:
+  22 Mrz 2009; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dvb-daemon-0.1.5.ebuild:
   Initial import.
 
