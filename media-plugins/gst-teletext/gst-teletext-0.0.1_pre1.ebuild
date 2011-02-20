@@ -8,7 +8,7 @@ inherit eutils autotools
 
 DESCRIPTION="A GStreamer based teletext decoder"
 HOMEPAGE="http://github.com/sebp/gst-teletext"
-SRC_URI="http://download.github.com/sebp-gst-teletext-5355813.zip"
+SRC_URI="https://download.github.com/sebp-gst-teletext-5355813.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
