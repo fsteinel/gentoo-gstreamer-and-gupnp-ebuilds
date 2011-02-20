@@ -32,7 +32,8 @@ RDEPEND="dev-libs/glib:2
 	x11-libs/gtk+:2
 	dev-python/gst-python
 	dev-python/pygobject
-	totem? ( media-video/totem )"
+	totem? ( media-video/totem )
+	upnp? ( >=media-tv/rygel-0.7.0 )"
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig
 	sys-devel/gettext"
@@ -40,7 +41,8 @@ DEPEND="${RDEPEND}
 pkg_setup() {
 	G2CONF="${G2CONF}
 		--disable-dependency-tracking
-		$(use_enable totem totem-plugin)"
+		$(use_enable totem totem-plugin)
+		$(use_enable upnp mediaserver)"
 
 	DOCS="AUTHORS ChangeLog NEWS README"
 }

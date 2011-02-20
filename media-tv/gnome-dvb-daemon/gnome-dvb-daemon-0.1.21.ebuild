@@ -41,7 +41,8 @@ DEPEND="${RDEPEND}
 pkg_setup() {
 	G2CONF="${G2CONF}
 		--disable-dependency-tracking
-		$(use_enable totem totem-plugin)"
+		$(use_enable totem totem-plugin)
+		$(use_enable upnp mediaserver)"
 
 	DOCS="AUTHORS ChangeLog NEWS README"
 }

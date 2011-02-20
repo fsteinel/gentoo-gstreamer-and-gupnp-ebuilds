@@ -22,12 +22,13 @@ RDEPEND="dev-libs/glib:2
 	dev-libs/dbus-glib
 	>=dev-libs/libgee-0.5.0
 	dev-db/sqlite:3
-	>=media-libs/gst-plugins-base-0.10.25
+	>=media-libs/gst-plugins-base-0.10.29
 	media-libs/gst-plugins-good
 	media-libs/gst-plugins-bad
 	media-plugins/gst-plugins-dvb
-	>=media-plugins/gst-rtsp-server-0.10.5
+	>=media-plugins/gst-rtsp-server-0.10.7
 	>=net-libs/gupnp-vala-0.6.2
+	>=dev-lang/vala-0.10.1
 	gnome-base/gconf
 	x11-libs/gtk+:2
 	dev-python/gst-python
@@ -41,7 +42,8 @@ DEPEND="${RDEPEND}
 pkg_setup() {
 	G2CONF="${G2CONF}
 		--disable-dependency-tracking
-		$(use_enable totem totem-plugin)"
+		$(use_enable totem totem-plugin)
+		$(use_enable upnp mediaserver)"
 
 	DOCS="AUTHORS ChangeLog NEWS README"
 }
