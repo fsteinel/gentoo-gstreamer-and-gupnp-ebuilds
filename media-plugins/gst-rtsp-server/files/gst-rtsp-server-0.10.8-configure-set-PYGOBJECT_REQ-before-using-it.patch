@@ -1,0 +1,29 @@
+From 68a828ee29a446e4ed6b54e953f1f90356816841 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Tim-Philipp=20M=C3=BCller?= <tim.muller@collabora.co.uk>
+Date: Wed, 26 Jan 2011 15:52:54 +0000
+Subject: [PATCH] configure: set PYGOBJECT_REQ before using it
+
+https://bugzilla.gnome.org/show_bug.cgi?id=640641
+---
+ configure.ac |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/configure.ac b/configure.ac
+index 3fe547b..10b8407 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -112,10 +112,10 @@ fi
+ AM_CHECK_PYTHON_HEADERS([HAVE_PYTHON_HEADERS=yes],[HAVE_PYTHON_HEADERS=no])
+ 
+ dnl check for pygobject (optional, used in the bindings)
++PYGOBJECT_REQ=2.11.2
+ PKG_CHECK_MODULES(PYGOBJECT, pygobject-2.0 >= $PYGOBJECT_REQ,
+   [HAVE_PYGOBJECT="yes"], [HAVE_PYGOBJECT="no"])
+ AC_SUBST(PYGOBJECT_CFLAGS)
+-AC_SUBST(PYGOBJECT_REQ, 2.11.2)
+ 
+ dnl check for gst-python
+ PKG_CHECK_MODULES(PYGST, gst-python-0.10,
+-- 
+1.7.3.4
+

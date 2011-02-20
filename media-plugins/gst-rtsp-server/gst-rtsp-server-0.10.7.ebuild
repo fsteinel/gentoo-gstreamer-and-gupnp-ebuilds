@@ -35,8 +35,6 @@ RDEPEND=""
 S="${WORKDIR}/${P/-server/}"
 
 src_prepare() {
-#	cd "${S}"
-#	epatch "${FILESDIR}/gst-0.10.28.patch"
 	eautoreconf
 }
 src_configure() {

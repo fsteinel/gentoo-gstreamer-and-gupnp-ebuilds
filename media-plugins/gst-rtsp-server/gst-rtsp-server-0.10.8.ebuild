@@ -4,8 +4,8 @@
 
 EAPI=2
 
-inherit autotools
-#inherit eutils autotools
+#inherit autotools
+inherit eutils autotools
 
 DESCRIPTION="A GStreamer based RTSP server"
 HOMEPAGE="http://people.freedesktop.org/~wtay/"
@@ -35,8 +35,7 @@ RDEPEND=""
 S="${WORKDIR}/${P/-server/}"
 
 src_prepare() {
-#	cd "${S}"
-#	epatch "${FILESDIR}/gst-0.10.28.patch"
+	epatch "${FILESDIR}/${P}-configure-set-PYGOBJECT_REQ-before-using-it.patch"
 	eautoreconf
 }
 src_configure() {
