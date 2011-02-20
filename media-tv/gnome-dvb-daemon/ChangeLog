@@ -1,6 +1,10 @@
 # ChangeLog for media-tv/gnome-dvb-daemon
-# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
+
+  20 Feb 2011; Florian Steinel <fsteinel@gentoo.de.flonet.net>
+  gnome-dvb-daemon-0.1.14.ebuild:
+  Fix python.eclass usage
 
 *gnome-dvb-daemon-0.1.14 (24 Dec 2009)
 

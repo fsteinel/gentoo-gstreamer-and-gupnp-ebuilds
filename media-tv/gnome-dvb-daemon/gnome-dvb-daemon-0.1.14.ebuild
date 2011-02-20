@@ -1,11 +1,12 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
 EAPI="2"
+
 SUPPORT_PYTHON_ABIS="1"
 PYTHON_DEFINE_DEFAULT_FUNCTIONS="1"
-NEED_PYTHON="2.5"
+PYTHON_DEPEND="2:2.5"
 RESTRICT_PYTHON_ABIS="3.*"
 
 inherit gnome2 python
