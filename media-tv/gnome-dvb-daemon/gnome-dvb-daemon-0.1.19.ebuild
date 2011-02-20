@@ -5,7 +5,7 @@
 EAPI="2"
 
 RESTRICT_PYTHON_ABIS="3.*"
-PYTHON_DEPEND="2"
+PYTHON_DEPEND="2:2.5"
 
 inherit gnome2 python
 
