@@ -2,6 +2,11 @@
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  20 Feb 2011; Florian Steinel <fsteinel@gentoo.de.flonet.net>
+  gnome-dvb-daemon-0.1.5.ebuild, gnome-dvb-daemon-0.1.6.ebuild,
+  gnome-dvb-daemon-0.1.7.ebuild:
+  Fix repoman errors
+
 *gnome-dvb-daemon-0.1.23 (20 Feb 2011)
 
   20 Feb 2011; Florian Steinel <fsteinel@gentoo.de.flonet.net> +gnome-dvb-daemon-0.1.23.ebuild:
