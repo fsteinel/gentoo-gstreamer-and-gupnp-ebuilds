@@ -15,7 +15,7 @@ SRC_URI="http://people.freedesktop.org/~wtay/${P/-server/}.tar.bz2"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
+IUSE="+introspection"
 #IUSE="python vala"
 
 #FIXME autoenabled python and vala bindings
@@ -40,7 +40,8 @@ src_prepare() {
 }
 src_configure() {
 	econf --with-package-name="Gentoo GStreamer Ebuild" \
-	--with-package-origin="http://www.gentoo.org"
+	--with-package-origin="http://www.gentoo.org" \
+	$(use_enable introspection)
 #	$(use_enable python) \
 #	$(use_enable vala)
 }
